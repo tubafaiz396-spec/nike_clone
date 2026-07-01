@@ -1,0 +1,36 @@
+.login-container { 
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .login-container input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-btn,
+  .toggle-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .toggle-btn {
+    background-color: transparent;
+    color: #333;
+    text-decoration: underline;
+  }
+  

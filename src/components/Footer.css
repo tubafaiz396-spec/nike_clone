@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f3f3f3;
+    padding: 40px; 
+    margin-top: 60px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section {
+    max-width: 300px;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 6px;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-section a:hover {
+    color: #D01C28;
+  }
+  
