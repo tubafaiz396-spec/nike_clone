@@ -18,7 +18,7 @@ export default function Category() {
           <div className="category-card" key={category.id}>
             <img src={category.image} alt={category.name} className="category-img" />
             <h3>{category.name}</h3>
-            <Link to={`/${category.name.toLowerCase()}`} target='_blank' className="category-link">
+            <Link to={`/${category.name.toLowerCase()}`} className="category-link">
               <button className="category-btn">Shop Now</button>
             </Link>
           </div>

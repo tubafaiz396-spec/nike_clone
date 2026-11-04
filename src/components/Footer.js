@@ -1,35 +1,18 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="footer"> 
-      <div className="footer-section">
-        <h3>Nike</h3>
-        <p>Empowering every athlete. Quality, comfort, and performance — Nike brings you the best in every step.</p>
+    <footer className="footer">
+      <div className="footer__brand">
+        <img src="/images/brand_logo.png" alt="Nike" />
+        <p>Move with purpose. Find the pair that keeps up.</p>
+        <a className="footer__mail" href="mailto:support@nike.com">support@nike.com <span>↗</span></a>
       </div>
-
-      <div className="footer-section">
-        <h4>Pages</h4>
-        <ul>
-          <li><Link to="/" target="_blank">Home</Link></li>
-          <li><Link to="/About" target="_blank">About</Link></li>
-          <li><Link to="/Contact" target="_blank">Contact</Link></li>
-          <li><Link to="/Services" target="_blank">Services</Link></li>
-        </ul>
-      </div>
-
-      <div className="footer-section">
-        <h4>Menu</h4>
-        <ul>
-        <li><Link to="/Men" target="_blank">Men</Link></li>
-        <li><Link to="/Women" target="_blank">Women</Link></li>
-        <li><Link to="/Kids" target="_blank">Kids</Link></li>
-        <li><Link to="/NewArrivals" target="_blank">New Arrivals</Link></li>
-        </ul>
-      </div>
+      <div><h3>Explore</h3><ul><li><Link to="/Men">Men</Link></li><li><Link to="/Women">Women</Link></li><li><Link to="/Kids">Kids</Link></li><li><Link to="/NewArrivals">New arrivals</Link></li></ul></div>
+      <div><h3>Need help?</h3><ul><li><Link to="/#services">Services</Link></li><li><Link to="/#contact">Contact</Link></li><li><Link to="/Cart">Cart</Link></li><li><Link to="/Checkout">Checkout</Link></li></ul></div>
+      <div className="footer__note"><span>Demo store · Cash on delivery</span><span>Orders are saved in this browser only.</span></div>
+      <div className="footer__bottom"><span>© 2026 Nike-inspired demo store</span><span>Built for motion.</span></div>
     </footer>
   );
-};
-
-export default Footer;
+}

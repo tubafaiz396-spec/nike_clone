@@ -1,71 +1,16 @@
-.about-container {
-    max-width: 960px; 
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.8;
-    color: #333;
-  }
-  
-  .about-hero {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .about-hero h1 {
-    font-size: 48px;
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
-  
-  .about-hero p {
-    font-size: 18px;
-    color: #5A5959;
-  }
-  
-  .about-story, .about-mission, .about-values {
-    margin-bottom: 40px;
-  }
-  
-  .about-values ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about-values li {
-    background-color: #f5f5f5;
-    padding: 10px 20px;
-    margin-bottom: 12px;
-    border-left: 5px solid #D01C28;
-  }
-  
-  .about-mission .note {
-    font-style: italic;
-    color: #888;
-    margin-top: 10px;
-  }
-  
-  .about-info {
-    text-align: center;
-    margin-top: 60px;
-  }
-  
-  .about-info h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .about-info button {
-    padding: 10px 30px;
-    background-color: #D01C28;
-    color: white;
-    font-weight: 600;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .about-info button:hover {
-    background-color: #a8131f;
-  }
-  
+.about-container, .services-container, .contact-container { padding-top: 88px; padding-bottom: 92px; scroll-margin-top: 75px; }
+.about-intro { display: grid; grid-template-columns: 1fr 1.6fr 1fr; gap: 34px; align-items: end; border-bottom: 1px solid var(--line); padding-bottom: 44px; }
+.about-intro h2, .services-heading h2, .contact-heading h2 { font-size: clamp(3rem, 6vw, 6.3rem); letter-spacing: -.08em; line-height: .88; }
+.about-intro h2 em, .services-heading h2 em, .contact-heading h2 em { color: var(--accent); font-style: normal; }
+.about-intro > p:last-child, .services-heading > p, .contact-heading > p { color: var(--muted); line-height: 1.7; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; padding: 46px 0 60px; }
+.about-stat { display: flex; flex-direction: column; gap: 12px; }
+.about-stat strong { font-family: "Space Grotesk"; font-size: clamp(5rem, 12vw, 10rem); letter-spacing: -.1em; line-height: .8; }
+.about-stat span { color: var(--muted); font-size: .8rem; max-width: 180px; }
+.about-copy { max-width: 440px; color: var(--muted); line-height: 1.8; }
+.about-copy .text-link { color: var(--white); margin-top: 27px; }
+.about-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.about-values > div { border-top: 2px solid var(--accent); padding-top: 17px; }
+.about-values span { color: var(--accent); font-size: .72rem; font-weight: 700; }
+.about-values h3 { font-size: 1.35rem; margin: 25px 0 8px; }
+.about-values p { color: var(--muted); font-size: .88rem; }

@@ -1,4 +1,5 @@
 node_modules/
+build/
 nike-layout-main/node_modules/
 nike-layout-main/
 .DS_Store
