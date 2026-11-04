@@ -9,3 +9,8 @@ yarn-error.log*
 pnpm-debug.log*
 
 .vercel
+
+# Environment files / secrets
+.env
+.env.local
+.env.*.local
